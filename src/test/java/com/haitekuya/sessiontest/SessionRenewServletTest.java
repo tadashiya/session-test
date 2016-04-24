@@ -15,7 +15,7 @@ public class SessionRenewServletTest {
     @Before
     public void prepare() {
         tester = new WebTester();
-        tester.setBaseUrl("http://localhost:8080/session-test3");
+        tester.setBaseUrl("http://localhost:8080/session-test");
     }
     
     @Test
