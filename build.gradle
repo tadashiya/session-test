@@ -15,12 +15,11 @@ repositories {
 }
 
 dependencies {
-    compile 'org.slf4j:slf4j-api:1.7.13'
     compile 'org.springframework:spring-web:4.2.5.RELEASE'
     compile 'org.springframework:spring-jdbc:4.2.5.RELEASE'
     compile 'org.springframework.session:spring-session:1.2.0.RC2'
     compile 'com.h2database:h2:1.4.191'
 
-    testCompile 'net.sourceforge.jwebunit:jwebunit-htmlunit-plugin:3.3'
-    testCompile 'junit:junit:4.12'
+//    testCompile 'net.sourceforge.jwebunit:jwebunit-htmlunit-plugin:3.3'
+//    testCompile 'junit:junit:4.12'
 }
