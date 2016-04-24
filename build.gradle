@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
+
+gretty {
+    // 'jetty7', 'jetty8', 'jetty9', 'tomcat7', 'tomcat8'
+    servletContainer = 'tomcat8'
+}
+
+repositories {
+    jcenter()
+    maven {
+        url 'https://repo.spring.io/libs-milestone'
+    }
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.13'
+    compile 'org.springframework:spring-web:4.2.5.RELEASE'
+    compile 'org.springframework:spring-jdbc:4.2.5.RELEASE'
+    compile 'org.springframework.session:spring-session:1.2.0.RC2'
+    compile 'com.h2database:h2:1.4.191'
+
+    testCompile 'junit:junit:4.12'
+}
